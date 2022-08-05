@@ -1,0 +1,59 @@
+.bottom-borders-effect-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-family: sans-serif;
+}
+
+.bottom-borders-effect{
+    padding: 0;
+    display: flex;
+}
+
+.bottom-borders-effect li{
+    list-style-type: none;
+    padding: 10px 10px;
+}
+
+.bottom-borders-effect li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.bottom-borders-effect li a:before {
+    content: " ";
+    width: 0;
+    height: 5px;
+    background-color: #9ee442;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.bottom-borders-effect li a:after {
+    content: " ";
+    width: 0;
+    height: 5px;
+    background-color: #c72174;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.bottom-borders-effect li a:hover:before{
+    width: 50%;
+    transform: translateX(100%)
+}
+
+.bottom-borders-effect li a:hover:after{
+    width: 50%;
+    transform: translateX(-100%)
+}

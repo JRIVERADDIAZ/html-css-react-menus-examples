@@ -1,0 +1,67 @@
+.background-borders-effect-container {
+
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display:flex;
+   align-items: center;
+   justify-content:center;
+   height: 10vh;
+   font-family: sans-serif;
+
+}
+
+.background-borders-effect {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    list-style-type: none;
+}
+
+.background-borders-effect li a{
+    color: #e73e3e;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.background-borders-effect li a:before {
+    content: "";
+    position: absolute; 
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e91e63;
+    border-width: 0 0 3px 3px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.background-borders-effect a:hover:before{
+    opacity: 1;
+    bottom: -8px;
+    left: -8px;
+}
+
+.background-borders-effect li a:after {
+    content: "";
+    position: absolute; 
+    top : 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e91e63;
+    border-width:  3px 3px 0 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.background-borders-effect a:hover:after{
+    opacity: 1;
+    top: -8px;
+    right: -8px;
+}

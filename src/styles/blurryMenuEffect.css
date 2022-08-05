@@ -1,0 +1,72 @@
+.blurry-effect-container {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height: 10vh;
+    font-family: sans-serif;
+
+ }
+
+
+
+ .blurry-effect {
+      margin: 0;
+      padding: 0;
+      display: flex;
+ }
+
+ .blurry-effect li{
+     list-style: none;
+     margin: 0px 20px;
+     transition: 0,25;
+ }
+
+.blurry-effect li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.blurry-effect:hover a {
+    filter: blur(5px);
+    opacity: 0.2;
+}
+
+.blurry-effect li a:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.blurry-effect li a:before {
+content: '';
+position: absolute;
+top:0;
+left: 0;  
+color: aliceblue; 
+width: 100%;
+height: 100%;
+background-color: orange;
+transition: 0.3s;
+transform: scale(0);
+z-index: -1
+
+}
+
+.blurry-effect li a:hover:before{
+    transform: scale(1);
+    border-radius: 2.5px;
+}
+    .blurry-effect:hover a{
+    filter: blur(5px);
+    opacity: 1;
+}
+

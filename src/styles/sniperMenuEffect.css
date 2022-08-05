@@ -1,0 +1,116 @@
+.sniper-menu-effect-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    font-family: sans-serif;
+}
+
+.sniper-menu-effect {
+    padding: 0;
+    display: flex;
+}
+
+.sniper-menu-effect li {
+    list-style: none;
+    padding: 10px 40px;
+}
+
+.sniper-menu-effect li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: white;
+    position: relative;
+    padding: 5px;
+    transition: all .3s ;
+}
+
+.sniper-menu-effect li a:hover {
+    transition-delay: .2s;
+    color: #ff0;
+    font-size: 20px;
+}
+
+
+.sniper-menu-effect span:first-child:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-top: 2px solid #ff0;
+    border-left: 2px solid #ff0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.sniper-menu-effect span:first-child:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-top: 2px solid #ff0;
+    border-right: 2px solid #ff0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.sniper-menu-effect span:last-child:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-bottom: 2px solid #ff0;
+    border-right: 2px solid #ff0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.sniper-menu-effect span:last-child:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-bottom: 2px solid #ff0;
+    border-left: 2px solid #ff0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.sniper-menu-effect li a:hover span:first-child:before {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+.sniper-menu-effect li a:hover span:first-child:after {
+    top: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+.sniper-menu-effect li a:hover span:last-child:before {
+    bottom: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+.sniper-menu-effect li a:hover span:last-child:after {
+    bottom: -10px;
+    left: -10px;
+    opacity: 1;
+} 
