@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/html-css-react-menus-examples/static/css/main.01f5ca21.css",
+    "main.js": "/html-css-react-menus-examples/static/js/main.2d5585d7.js",
+    "index.html": "/html-css-react-menus-examples/index.html",
+    "main.01f5ca21.css.map": "/html-css-react-menus-examples/static/css/main.01f5ca21.css.map",
+    "main.2d5585d7.js.map": "/html-css-react-menus-examples/static/js/main.2d5585d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01f5ca21.css",
+    "static/js/main.2d5585d7.js"
+  ]
+}
